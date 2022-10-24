@@ -9,7 +9,7 @@ const CreateReservation = () => {
 				<h2 class='text-2xl font-medium leading-6 text-gray-900 '>
 					Room Reservation
 				</h2>
-				<Link href={'/customers/create'}>
+				<Link href={'/rooms/reservation'}>
 					<a class='default-btn'>Go Back</a>
 				</Link>
 			</div>
