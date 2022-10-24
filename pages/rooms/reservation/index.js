@@ -1,16 +1,15 @@
-import Link from 'next/link';
-import React from 'react';
-import CustomerTable from '../../components/pages/customer/CustomerTable';
+import Link from 'next/link'
+import ReservationTable from '../../../components/pages/rooms/ReservationTable'
 
-const CustomerListScreen = () => {
-	return (
-		<div className='container'>
+const ReservationListScreen = () => {
+  return (
+    <div className='container'>
 			<div className='flex justify-between items-center mb-4'>
 				<h2 class='text-2xl font-medium leading-6 text-gray-900 '>
-					Customer List
+					Reservation List
 				</h2>
-				<Link href={'/customers/create'}>
-					<a class='default-btn'>Add Customer</a>
+				<Link href={'/rooms/reservation/create'}>
+					<a class='default-btn'>Add Reservation</a>
 				</Link>
 			</div>
 			{/* Filter Customer Section */}
@@ -43,9 +42,9 @@ const CustomerListScreen = () => {
 				</div>
 			</div>
 			{/* End Filter Customer Section */}
-			<CustomerTable />
+			<ReservationTable />
 		</div>
-	);
-};
+  )
+}
 
-export default CustomerListScreen;
+export default ReservationListScreen
