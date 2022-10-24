@@ -1,21 +1,21 @@
 import Link from 'next/link';
 import React from 'react';
-import CustomerForm from '../../components/pages/customer/CustomerForm';
+import ReservationForm from '../../../components/pages/rooms/ReservationForm';
 
-const CustomerCreate = () => {
+const CreateReservation = () => {
 	return (
 		<div className='container'>
 			<div className='flex justify-between items-center mb-4'>
 				<h2 class='text-2xl font-medium leading-6 text-gray-900 '>
-					New Customer
+					Room Reservation
 				</h2>
 				<Link href={'/customers/create'}>
 					<a class='default-btn'>Go Back</a>
 				</Link>
 			</div>
-      <CustomerForm />
+			<ReservationForm />
 		</div>
 	);
 };
 
-export default CustomerCreate;
+export default CreateReservation;
